@@ -1,0 +1,22 @@
+{
+    "name": "Text speaker",
+    "description": "My first Extension!",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["speaker.js"],
+        "css" : ["speaker.css"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "./images/img.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_name__"
+    },
+    "permissions": ["activeTab"]
+    
+}

@@ -1,0 +1,21 @@
+.corner {
+     margin: 0;
+     padding: 0;
+     display: none;
+     position: absolute;
+     transform: (-50%, -50%);
+     background: #333;
+     padding: 5px 10px;
+     color: #fff;
+     border-radius: 10px;
+     list-style: none;
+     z-index:99999999; 
+}
+.corner:before {
+     position: absolute;
+     content: "";
+     border: 5px solid transparent;
+     border-top: 5px solid #333;
+     top: 99%;
+     left: 40%;
+}
